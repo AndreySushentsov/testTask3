@@ -1,0 +1,77 @@
+@import "_variables";
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-left: 1px solid $main_color;
+}
+.content-item{
+  width: 25%;
+  // min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $main_color;
+  border-bottom: 1px solid $main_color;
+}
+.item-title{
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.6);
+  text-align: center;
+  min-height: 68px;
+  max-height: 70px;
+  overflow: hidden;
+}
+.item-content{
+  position: relative;
+  padding: 10px;
+  height: 100%;
+}
+.item-content ul li {
+  margin-left: 20px;
+}
+
+.availability div{
+  text-align: center;
+  padding: 20px;
+  span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  &:first-child{
+    border-bottom: 1px solid $main_color;
+  }
+}
+.availability h2{
+  font-size: 1.8rem;
+}
+.item-content i{
+  font-size: 3rem;
+  color: lightgray;
+  z-index: -1;
+  position: absolute;
+}
+.fa-quote-left{
+  left:5%;
+  top:3%;
+}
+.fa-quote-right{
+  right: 5%;
+  bottom: 3%;
+}
+.item-content .text{
+  padding:10px;
+  padding-bottom: 0;
+  font-style: italic;
+}
+.author{
+  text-align: right;
+}

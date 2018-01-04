@@ -1,0 +1,137 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title testTask
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet")
+    link(rel='stylesheet' href='./css/main.css')
+    link(rel='stylesheet' href='./css/font-awesome.min.css')
+
+
+  body
+    .container
+      header.header
+        .img-wrapper
+          img(src='http://i.dailymail.co.uk/i/pix/2016/06/15/02/26FC2E3000000578-3641721-Snow_s_doppelganger_goes_by_the_name_of_facialfollicles_on_Insta-a-16_1465952970225.jpg' alt='avatar')
+        .header-content
+          button.print-page print this page
+          .name
+            h2(contenteditable="true") John Snow
+            a(href="#").button.ok
+              i(class='fa fa-check')
+            a(href="#").button.remove
+              i(class='fa fa-times')
+          .location      
+            p(contenteditable="true") Portland, Oregon, USA
+            span.button.ok
+              i(class='fa fa-check')
+            span.button.remove
+              i(class='fa fa-times')
+          .language      
+            p(contenteditable="true") English
+            span.button.ok
+              i(class='fa fa-check')
+            span.button.remove
+              i(class='fa fa-times')
+          ul.skills-list
+            li.strong
+              a(href='#') php
+              span.remove-skill
+                i.fa.fa-times
+            li.low
+              a(href='#') ruby
+              span.remove-skill
+                i.fa.fa-times
+            li.medium
+              a(href='#') javascript
+              span.remove-skill
+                i.fa.fa-times 
+          div.add_skill      
+            a(href='#') Add skills
+            form(action="#" method='post').form-add_skill
+              input(type='text' placeholder='Add skill' name='skill' required )
+              select(name='skills-level')
+                option(value='strong') strong
+                option(value='medium') medium
+                option(value='low') low
+              button
+                i(class='fa fa-check')
+      main.content
+        .content-item
+          .item-title
+            h3 Portfolio
+            span PHP, Ruby, javascript
+          .item-content
+            ul
+              li
+                span <strong> NavalPlan, </strong> PHP, Ruby 
+              li
+                span <strong> MyTime, </strong>JavaScript
+              li
+                span <strong>Formidable, </strong>PHP, Ruby  
+              li
+                span <strong>MyTime, </strong>JavaScript             
+              li
+                span <strong> NavalPlan, </strong> PHP, Ruby 
+              li
+                span <strong> MyTime, </strong>JavaScript
+              li
+                span <strong>Formidable, </strong>PHP, Ruby  
+              li
+                span <strong>MyTime, </strong>JavaScript  
+              li
+                span <strong>Monsoon, </strong>ActionScript    
+        .content-item
+          .item-title
+            h3 Experience
+          .item-content
+            ul
+              li
+                span <strong>PHP, </strong> 6 years 
+              li
+                span <strong>Ruby, </strong>7 years
+              li
+                span <strong>JavaScript, </strong>4 years  
+              li
+                span <strong>ActionScript, </strong>3 years    
+        .content-item
+          .item-title
+            h3 Simple code and algorithms
+        .content-item.availability
+          div
+            span Availability
+            h2 Full-time
+          div
+            span Preferred environment
+            p Git,Github, vim, emacs, Jenkins, Mac OS
+        .content-item
+          .item-title
+            h3 The most amazing The most amazing The most amazing The most amazing The most amazing The most amazing The most amazing The most amazing The most amazing 
+          .item-content
+            i(class="fa fa-quote-left")
+            i(class="fa fa-quote-right")
+            p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            .author <strong>-Author</strong>
+        .content-item
+          .item-title
+            h3 In clients I look for
+          .item-content
+            i(class="fa fa-quote-left")
+            i(class="fa fa-quote-right")
+            p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut e   
+            .author <strong>-Author</strong>
+        .content-item
+        .content-item
+          .item-title
+            h3 Note
+          .item-content
+            i(class="fa fa-quote-left")
+            i(class="fa fa-quote-right")
+            p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut e   
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(src='./js/main.js' defer)
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
